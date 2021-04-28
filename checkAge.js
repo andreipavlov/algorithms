@@ -11,5 +11,5 @@ let age = prompt("How old are you?", 18);
 if (checkAge(age)) {
   alert("Access granted");
 } else {
-  alert("Access denied");
+  alert("Access denied!");
 }
