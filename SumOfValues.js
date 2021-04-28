@@ -24,3 +24,5 @@ function sum(input) {
 console.log(sum([1, 2, 3]));
 console.log(sum([100, -200, 3]));
 console.log(sum([1, 2, "a", 3]));
+
+[1, 2, 3, 4].reduce((a, b) => a + b, 0);
