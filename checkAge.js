@@ -13,3 +13,12 @@ if (checkAge(age)) {
 } else {
   alert("Access denied");
 }
+
+function checkAge(age) {
+  if (age >= 60) {
+    return "Congratulation on your retirement!";
+  } else {
+    return "not eligible for retirement";
+  }
+}
+console.log(checkAge(55));
