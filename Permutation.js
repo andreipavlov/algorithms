@@ -1,3 +1,6 @@
+// Write a function that takes in a string (“DOG”) and outputs every combination possible of that word in an array
+
+
 function findPerms(str) {
 if (str.length === 0) return "";
 if (str.length === 1) return str;
