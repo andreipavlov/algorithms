@@ -3,6 +3,13 @@
 // Note that the target sum has to be obtained by summing two different integers in the array; you can't add a single integer to itself in order to obtain the target sum.
 
 // You can assume that there will be at most one pair of numbers summing up to the target sum.
+// Напишите функцию, которая принимает непустой массив различных целых чисел и целое число, представляющее целевую сумму. 
+// Если сумма любых двух чисел во входном массиве равна целевой сумме, функция должна вернуть их в массиве в любом порядке. 
+// Если нет двух чисел, суммирующих целевую сумму, функция должна вернуть пустой массив.
+
+// Обратите внимание, что целевая сумма должна быть получена путем суммирования двух разных целых чисел в массиве;
+// вы не можете прибавить к себе одно целое число, чтобы получить целевую сумму.
+
 
 // Solution 1
 
@@ -16,3 +23,4 @@ function twoNumberSum(array, targetSum) {
   }
   return [];
 }
+console.log(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10))
