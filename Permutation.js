@@ -16,3 +16,14 @@ for (let j = 0; j < remainingChars.length; j++) {
 }
 
 console.log (findPerms("dog"))
+
+
+// Write a function that checks if two strings are permutations of each other
+
+function arePermutations(str1, str2){
+if (typeof str1 !==  typeof str2) return ([str1 , str2])
+else{
+  return str1.split("").sort().join("") === str2.split("").sort().join("");
+}
+}
+console.log (arePermutations("tacocat", "ttacoca"))
