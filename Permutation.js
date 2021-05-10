@@ -28,20 +28,22 @@ else{
 }
 console.log (arePermutations("tacocat", "ttacoca"))
 
+//
 
-function(s, t) {
- if(s === t) return true
- if(s.length !== t.length) return false
+function arePermutation(str1, str2) {
+ if(str1 === str2) return true
+ if(str1.length !== str2.length) return false
 
  let count = {}
 
- for(let letter of s)
+ for(let letter of str1)
   count[letter] = (count[letter] || 0) + 1
 
- for(let letter of t) { 
+ for(let letter of str2) { 
   if(!count[letter]) return false
   else --count[letter]
  }
 
  return true;
 }
+console.log(arePermutation("ana", "naa"))
