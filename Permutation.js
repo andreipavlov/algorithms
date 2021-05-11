@@ -20,6 +20,8 @@ console.log (findPerms("dog"))
 
 // Write a function that checks if two strings are permutations of each other
 
+//  1 VARIANT
+
 function arePermutations(str1, str2){
 if (typeof str1 !==  typeof str2) return ([str1 , str2])
 else{
@@ -28,7 +30,7 @@ else{
 }
 console.log (arePermutations("tacocat", "ttacoca"))
 
-//
+// 2 VARIANT
 
 function arePermutation(str1, str2) {
  if(str1 === str2) return true
